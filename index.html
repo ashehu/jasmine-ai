@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jasmine turns a brand brief into ranked, explainable creator matches built for brand fit, audience relevance, and safety."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#191633" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jasmine | Choose creators for fit, not hype" />
+    <meta
+      property="og:description"
+      content="AI decision intelligence that turns a brand brief into ranked, explainable creator matches."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Jasmine | Choose creators for fit, not hype" />
+    <meta
+      name="twitter:description"
+      content="AI decision intelligence that turns a brand brief into ranked, explainable creator matches."
+    />
+    <title>Jasmine | Choose creators for fit, not hype</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23191633'/%3E%3Ccircle cx='12' cy='12' r='6' fill='%237c5ce6'/%3E%3Ccircle cx='21' cy='12' r='6' fill='%23e95770'/%3E%3Ccircle cx='16.5' cy='21' r='6' fill='%23c8ef72'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="assets/lucide.min.js" defer></script>
+    <script src="app.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Jasmine",
+        "email": "info@byteflows.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "135 West 41st Street",
+          "addressLocality": "New York",
+          "addressRegion": "New York",
+          "addressCountry": "US"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#product">Skip to product</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Jasmine home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>Jasmine</span>
+      </a>
+
+      <button class="icon-button menu-button" type="button" data-menu-button aria-label="Open navigation" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="main-nav" data-nav aria-label="Primary navigation">
+        <a href="#product">Product</a>
+        <a href="#ai">Inside the AI</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#partners">For teams</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="button button-small header-cta" type="button" data-open-pilot>
+        Run a pilot
+        <i data-lucide="arrow-up-right"></i>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-rule" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">AI decision intelligence for brand managers</p>
+            <h1 id="hero-title">Jasmine</h1>
+            <p class="hero-statement">Choose creators for fit, not hype.</p>
+            <p class="hero-summary">
+              Turn your brand brief, audience, values, and safety standards into a ranked creator shortlist with clear reasons behind every recommendation.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#product">
+                Try the shortlist
+                <i data-lucide="arrow-down"></i>
+              </a>
+              <button class="button button-quiet" type="button" data-open-pilot>
+                Run a live pilot
+                <i data-lucide="arrow-up-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-signal reveal" aria-label="Jasmine workflow summary">
+            <div>
+              <span>01</span>
+              <strong>Brand context</strong>
+            </div>
+            <div>
+              <span>02</span>
+              <strong>Fit + safety</strong>
+            </div>
+            <div>
+              <span>03</span>
+              <strong>Explained shortlist</strong>
+            </div>
+          </div>
+        </div>
+        <a class="hero-next" href="#product" aria-label="Continue to product">
+          <span>Brief in. Shortlist out.</span>
+          <i data-lucide="arrow-down"></i>
+        </a>
+      </section>
+
+      <section class="product-section" id="product" aria-labelledby="product-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow eyebrow-dark">A working product story</p>
+          <h2 id="product-title">See the decision, not just the score.</h2>
+          <p>Adjust the sample brief and let Jasmine rebuild the recommendation around the campaign context.</p>
+        </div>
+
+        <div class="product-shell reveal" data-product-shell>
+          <div class="product-topbar">
+            <div class="product-brand">
+              <span class="product-mark" aria-hidden="true"></span>
+              <span>Jasmine workspace</span>
+            </div>
+            <div class="workspace-status"><span></span> Brand standard active</div>
+          </div>
+
+          <div class="product-layout">
+            <form class="brief-panel" data-brief-form>
+              <div class="panel-heading">
+                <div>
+                  <span class="step-label">Campaign brief</span>
+                  <h3>Aster Skin serum launch</h3>
+                </div>
+                <button class="icon-button" type="button" title="Reset brief" data-reset-brief aria-label="Reset sample brief">
+                  <i data-lucide="rotate-ccw"></i>
+                </button>
+              </div>
+
+              <fieldset class="field-group">
+                <legend>Objective</legend>
+                <div class="segmented-control" data-objective-control>
+                  <button type="button" data-value="awareness" aria-pressed="true">Awareness</button>
+                  <button type="button" data-value="launch" aria-pressed="false">Launch</button>
+                  <button type="button" data-value="ugc" aria-pressed="false">UGC</button>
+                </div>
+              </fieldset>
+
+              <fieldset class="field-group">
+                <legend>Audience</legend>
+                <div class="select-row">
+                  <label>
+                    <span>Market</span>
+                    <select data-market>
+                      <option value="US">United States</option>
+                      <option value="UK">United Kingdom</option>
+                      <option value="EU">European Union</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span>Age</span>
+                    <select data-age>
+                      <option value="25-34">25-34</option>
+                      <option value="18-24">18-24</option>
+                      <option value="35-44">35-44</option>
+                    </select>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="field-group">
+                <legend>Brand values</legend>
+                <div class="choice-grid" data-value-control>
+                  <label><input type="checkbox" value="science" checked /><span>Science-led</span></label>
+                  <label><input type="checkbox" value="inclusive" checked /><span>Inclusive</span></label>
+                  <label><input type="checkbox" value="premium" checked /><span>Premium</span></label>
+                  <label><input type="checkbox" value="sustainable" /><span>Sustainable</span></label>
+                </div>
+              </fieldset>
+
+              <fieldset class="field-group safety-group">
+                <legend>Safety standard</legend>
+                <label class="toggle-row">
+                  <span><strong>Claims review</strong><small>Flag unsupported product claims</small></span>
+                  <input type="checkbox" checked data-safety="claims" />
+                </label>
+                <label class="toggle-row">
+                  <span><strong>Conflict check</strong><small>Review recent competitor work</small></span>
+                  <input type="checkbox" checked data-safety="conflicts" />
+                </label>
+              </fieldset>
+
+              <button class="button button-generate" type="submit">
+                <i data-lucide="sparkles"></i>
+                Build explained shortlist
+              </button>
+            </form>
+
+            <div class="results-panel" aria-live="polite">
+              <div class="panel-heading results-heading">
+                <div>
+                  <span class="step-label">Recommended creators</span>
+                  <h3>Ranked for this brief</h3>
+                </div>
+                <span class="result-count" data-result-count>3 matches</span>
+              </div>
+
+              <div class="analysis-progress" data-analysis-progress hidden>
+                <div class="analysis-line"><span></span></div>
+                <p data-analysis-label>Reading campaign context...</p>
+              </div>
+
+              <div class="creator-list" data-creator-list>
+                <article class="creator-row selected" data-creator="maya">
+                  <button class="creator-summary" type="button" aria-expanded="true">
+                    <span class="creator-avatar avatar-maya">MK</span>
+                    <span class="creator-identity"><strong>Maya Kim</strong><small>@mayadoesderm</small></span>
+                    <span class="creator-reach"><strong>312K</strong><small>followers</small></span>
+                    <span class="fit-score"><strong data-score>94</strong><small>fit</small></span>
+                    <i data-lucide="chevron-down"></i>
+                  </button>
+                  <div class="creator-detail">
+                    <div class="reason-list">
+                      <span><i data-lucide="check"></i> Dermatology education</span>
+                      <span><i data-lucide="check"></i> 68% audience age 25-34</span>
+                      <span><i data-lucide="check"></i> Premium visual language</span>
+                    </div>
+                    <div class="review-note"><i data-lucide="shield-check"></i><span>No priority conflicts surfaced</span></div>
+                  </div>
+                </article>
+
+                <article class="creator-row" data-creator="nia">
+                  <button class="creator-summary" type="button" aria-expanded="false">
+                    <span class="creator-avatar avatar-nia">NO</span>
+                    <span class="creator-identity"><strong>Nia Ortiz</strong><small>@niaskinnotes</small></span>
+                    <span class="creator-reach"><strong>184K</strong><small>followers</small></span>
+                    <span class="fit-score"><strong data-score>89</strong><small>fit</small></span>
+                    <i data-lucide="chevron-down"></i>
+                  </button>
+                  <div class="creator-detail">
+                    <div class="reason-list">
+                      <span><i data-lucide="check"></i> High save rate on routines</span>
+                      <span><i data-lucide="check"></i> Strong US audience match</span>
+                      <span><i data-lucide="check"></i> Inclusive beauty voice</span>
+                    </div>
+                    <div class="review-note review-note-warn"><i data-lucide="flag"></i><span>Review one recent category partnership</span></div>
+                  </div>
+                </article>
+
+                <article class="creator-row" data-creator="theo">
+                  <button class="creator-summary" type="button" aria-expanded="false">
+                    <span class="creator-avatar avatar-theo">TB</span>
+                    <span class="creator-identity"><strong>Theo Brooks</strong><small>@theobathroomlab</small></span>
+                    <span class="creator-reach"><strong>97K</strong><small>followers</small></span>
+                    <span class="fit-score"><strong data-score>86</strong><small>fit</small></span>
+                    <i data-lucide="chevron-down"></i>
+                  </button>
+                  <div class="creator-detail">
+                    <div class="reason-list">
+                      <span><i data-lucide="check"></i> Ingredient-first reviews</span>
+                      <span><i data-lucide="check"></i> Above-benchmark engagement</span>
+                      <span><i data-lucide="check"></i> Emerging male skincare audience</span>
+                    </div>
+                    <div class="review-note"><i data-lucide="shield-check"></i><span>No priority conflicts surfaced</span></div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="decision-footer">
+                <div><i data-lucide="scan-search"></i><span>Campaign-specific candidate pool</span></div>
+                <div><i data-lucide="circle-user-round"></i><span>Brand manager approves</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="demo-note reveal">Illustrative workflow and sample outputs. Final scoring and review criteria are configured around the brand and campaign.</p>
+      </section>
+
+      <section class="ai-section" id="ai" aria-labelledby="ai-title">
+        <div class="ai-layout">
+          <div class="ai-intro reveal">
+            <p class="eyebrow eyebrow-dark">Inside the AI</p>
+            <h2 id="ai-title">What happens between the brief and the shortlist.</h2>
+            <p class="lead">
+              Jasmine does not ask, “Who is the biggest creator?” It asks, “Who fits this campaign, and what evidence supports that choice?”
+            </p>
+            <div class="ai-principle">
+              <i data-lucide="split"></i>
+              <p><strong>Same creator. Different brief. Different ranking.</strong>The model evaluates fit relative to the campaign rather than assigning one universal creator score.</p>
+            </div>
+            <div class="human-boundary">
+              <i data-lucide="circle-user-round"></i>
+              <p><strong>AI recommends. Brand managers approve.</strong>Jasmine organizes evidence and surfaces uncertainty. The final campaign decision stays human.</p>
+            </div>
+          </div>
+
+          <div class="ai-stages reveal" aria-label="Jasmine AI process">
+            <article>
+              <span class="ai-number">01</span>
+              <div class="ai-stage-icon"><i data-lucide="braces"></i></div>
+              <div>
+                <h3>Structures the brand brief</h3>
+                <p>Language understanding turns brand descriptions, audiences, values, objectives, exclusions, and safety standards into campaign-specific decision criteria.</p>
+                <div class="signal-list"><span>Audience</span><span>Values</span><span>Objective</span><span>Exclusions</span></div>
+              </div>
+            </article>
+            <article>
+              <span class="ai-number">02</span>
+              <div class="ai-stage-icon"><i data-lucide="database-zap"></i></div>
+              <div>
+                <h3>Assembles creator evidence</h3>
+                <p>Jasmine brings relevant creator, audience, content, performance, and recent brand-association signals into one comparable view.</p>
+                <div class="signal-list"><span>Content</span><span>Audience</span><span>Performance</span><span>Associations</span></div>
+              </div>
+            </article>
+            <article>
+              <span class="ai-number">03</span>
+              <div class="ai-stage-icon"><i data-lucide="scan-search"></i></div>
+              <div>
+                <h3>Reasons in campaign context</h3>
+                <p>The AI weighs signals against this brief, ranks likely fit, and highlights tensions, missing evidence, or issues that deserve human review.</p>
+                <div class="signal-list"><span>Fit</span><span>Safety</span><span>Tradeoffs</span><span>Uncertainty</span></div>
+              </div>
+            </article>
+            <article>
+              <span class="ai-number">04</span>
+              <div class="ai-stage-icon"><i data-lucide="messages-square"></i></div>
+              <div>
+                <h3>Explains the recommendation</h3>
+                <p>Each ranked option arrives with reasons, supporting signals, and review items so a brand manager can compare, question, and defend the choice.</p>
+                <div class="signal-list"><span>Ranking</span><span>Reasons</span><span>Flags</span><span>Review</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="problem-section" aria-labelledby="problem-title">
+        <div class="problem-image reveal">
+          <img
+            src="assets/brand-manager-overwhelmed.jpg"
+            alt="An overwhelmed brand manager after a difficult campaign day"
+            width="1536"
+            height="2048"
+            loading="lazy"
+          />
+          <span class="image-caption">Monday, 11:47 PM</span>
+        </div>
+        <div class="problem-copy reveal">
+          <p class="eyebrow eyebrow-coral">The current reality</p>
+          <h2 id="problem-title">Too many choices.<br />Too little confidence.</h2>
+          <p class="lead">Access is not the hard part. Making a fast, defensible choice is.</p>
+          <div class="pressure-list">
+            <div><span>01</span><p><strong>Endless creator options</strong>More names do not create a better decision.</p></div>
+            <div><span>02</span><p><strong>Inconsistent shortlists</strong>Fit changes with every brief, brand, and moment.</p></div>
+            <div><span>03</span><p><strong>Growing brand risk</strong>Context gets lost when review becomes a checklist.</p></div>
+            <div><span>04</span><p><strong>Time-sensitive campaigns</strong>Every round of rejection and renegotiation costs time.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="evidence-section" id="evidence" aria-labelledby="evidence-title">
+        <div class="evidence-header reveal">
+          <div>
+            <p class="eyebrow eyebrow-dark">Creator research · n=198</p>
+            <h2 id="evidence-title">Mismatch is an operating cost.</h2>
+          </div>
+          <p>Bad fit creates rejection, negotiation, and delay before content production begins.</p>
+        </div>
+
+        <div class="stat-row reveal">
+          <article>
+            <strong>52%</strong>
+            <p>receive a mismatched collaboration offer at least once a week.</p>
+          </article>
+          <article>
+            <strong>56%</strong>
+            <p>decline a brief when the brand or campaign does not fit.</p>
+          </article>
+          <article>
+            <strong>70%</strong>
+            <p>of creators who accept mismatched work say they raise the fee.</p>
+          </article>
+        </div>
+
+        <div class="economics-row reveal">
+          <p class="economics-kicker">The other side of fit</p>
+          <div><strong>54%</strong><span>report lowering fees by 10-20% for a brand that genuinely fits.</span></div>
+          <div><strong>19%</strong><span>report lowering fees by 21-30%.</span></div>
+          <p class="economics-close">Alignment can change the economics.</p>
+        </div>
+
+        <details class="source-disclosure reveal">
+          <summary>Research scope and sources <i data-lucide="chevron-down"></i></summary>
+          <p>
+            Minds&amp;Roses for Midnight Issue, CAWI survey of 198 active creators, March-April 2026. Reported behavior is self-reported and should not be interpreted as guaranteed savings.
+          </p>
+          <div class="source-links">
+            <a href="https://www.wirtualnemedia.pl/raport-dopasowanie-marki-do-tworcy-kluczowa-waluta-w-influencer-marketingu%2C7275586145749280a" target="_blank" rel="noreferrer">Research coverage <i data-lucide="external-link"></i></a>
+            <a href="https://www.linkedin.com/company/midnight-issue" target="_blank" rel="noreferrer">Midnight Issue <i data-lucide="external-link"></i></a>
+          </div>
+        </details>
+      </section>
+
+      <section class="workflow-section" id="workflow" aria-labelledby="workflow-title">
+        <div class="workflow-heading reveal">
+          <p class="eyebrow">The review layer</p>
+          <h2 id="workflow-title">A shortlist a brand manager can defend.</h2>
+        </div>
+
+        <div class="workflow-grid reveal">
+          <article>
+            <span class="workflow-number">01</span>
+            <i data-lucide="list-filter"></i>
+            <h3>Compare ranked options</h3>
+            <p>See which creators best fit the campaign and how the strongest candidates differ.</p>
+          </article>
+          <article>
+            <span class="workflow-number">02</span>
+            <i data-lucide="scan-text"></i>
+            <h3>Inspect the reasoning</h3>
+            <p>Review the audience, content, performance, and contextual signals behind the recommendation.</p>
+          </article>
+          <article>
+            <span class="workflow-number">03</span>
+            <i data-lucide="badge-check"></i>
+            <h3>Resolve flags, then approve</h3>
+            <p>Potential conflicts and uncertainty stay visible. The final creator choice stays with the brand.</p>
+          </article>
+        </div>
+
+        <div class="market-proof reveal">
+          <div><strong>760K+</strong><span>creators analyzed</span></div>
+          <div><strong>10M+</strong><span>pieces of content</span></div>
+          <p>Independent market analysis reinforces the same conclusion: precision beats volume.</p>
+          <a href="https://www.traackr.com/influencer-marketing-reports/2026-creator-advantage-us-report" target="_blank" rel="noreferrer">Traackr, The Creator Advantage 2026 <i data-lucide="external-link"></i></a>
+        </div>
+      </section>
+
+      <section class="partners-section" id="partners" aria-labelledby="partners-title">
+        <div class="partners-copy reveal">
+          <p class="eyebrow eyebrow-dark">Built around the team</p>
+          <h2 id="partners-title">Brand control.<br />Agency execution.<br /><span>Jasmine intelligence.</span></h2>
+          <p class="lead">Jasmine strengthens the working relationship. It does not replace it.</p>
+
+          <div class="role-list">
+            <article>
+              <span>Brand manager</span>
+              <p>Sets the brief, audience, values, and safety standards. Reviews and approves.</p>
+            </article>
+            <article>
+              <span>Jasmine</span>
+              <p>Finds, ranks, explains, and flags creator matches against the brand context.</p>
+            </article>
+            <article>
+              <span>Agency partner</span>
+              <p>Adds market judgment, activates creators, and runs the campaign.</p>
+            </article>
+          </div>
+        </div>
+        <div class="partners-image reveal">
+          <img
+            src="assets/brand-manager-confident.jpg"
+            alt="A confident brand manager ready to launch a campaign"
+            width="1290"
+            height="1661"
+            loading="lazy"
+          />
+          <div class="image-statement"><span>After the shortlist</span><strong>Ready to approve.</strong></div>
+        </div>
+      </section>
+
+      <section class="pilot-section" aria-labelledby="pilot-title">
+        <div class="pilot-content reveal">
+          <p class="eyebrow">Launch focus</p>
+          <h2 id="pilot-title">Start with one live campaign.</h2>
+          <p>Bring the brief, safety standards, and agency. Jasmine brings the shortlist and the reasoning.</p>
+          <button class="button button-light" type="button" data-open-pilot>
+            Run a pilot
+            <i data-lucide="arrow-right"></i>
+          </button>
+        </div>
+        <div class="pilot-steps reveal" aria-label="Pilot process">
+          <div><span>01</span><strong>One live campaign</strong></div>
+          <div><span>02</span><strong>Explained shortlist</strong></div>
+          <div><span>03</span><strong>Brand manager approves</strong></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-main">
+        <div class="footer-intro">
+          <a class="brand footer-brand" href="#top">
+            <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span>Jasmine</span>
+          </a>
+          <p>AI decision intelligence for brand managers.</p>
+        </div>
+
+        <div class="footer-contact">
+          <span class="footer-label">Visit</span>
+          <a
+            href="https://www.google.com/maps/search/?api=1&amp;query=135+West+41st+Street+New+York+New+York"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <address>135 West 41st Street<br />New York, New York</address>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div class="footer-contact">
+          <span class="footer-label">Email</span>
+          <a href="mailto:info@byteflows.com">
+            info@byteflows.com
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <span class="footer-label">Follow</span>
+          <div class="social-links" aria-label="Social media">
+            <a href="#" data-social-placeholder="X" aria-label="X"><img src="assets/social-x.svg" alt="" /></a>
+            <a href="#" data-social-placeholder="Instagram" aria-label="Instagram"><img src="assets/social-instagram.svg" alt="" /></a>
+            <a href="#" data-social-placeholder="YouTube" aria-label="YouTube"><img src="assets/social-youtube.svg" alt="" /></a>
+            <a href="#" data-social-placeholder="LinkedIn" aria-label="LinkedIn"><img src="assets/social-linkedin.svg" alt="" /></a>
+            <a href="#" data-social-placeholder="TikTok" aria-label="TikTok"><img src="assets/social-tiktok.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Jasmine. All rights reserved.</p>
+        <div>
+          <a href="#product">Product</a>
+          <a href="#evidence">Evidence</a>
+          <button type="button" data-open-pilot>Run a pilot</button>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="pilot-dialog" data-pilot-dialog aria-label="Request a Jasmine pilot">
+      <form method="dialog" class="dialog-form" data-pilot-form>
+        <button class="icon-button dialog-close" type="button" data-close-pilot aria-label="Close pilot form">
+          <i data-lucide="x"></i>
+        </button>
+        <p class="eyebrow eyebrow-dark">One campaign. One better decision.</p>
+        <h2>Run a Jasmine pilot.</h2>
+        <p>Tell us where creator selection is slowing you down.</p>
+
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label>
+          <span>Work email</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          <span>Brand or company</span>
+          <input type="text" name="company" autocomplete="organization" required />
+        </label>
+        <label>
+          <span>Next campaign</span>
+          <select name="campaign" required>
+            <option value="" selected disabled>Select campaign type</option>
+            <option>Product launch</option>
+            <option>Always-on creator program</option>
+            <option>Seasonal campaign</option>
+            <option>Brand repositioning</option>
+          </select>
+        </label>
+
+        <button class="button button-primary dialog-submit" type="submit">
+          Prepare email request
+          <i data-lucide="arrow-right"></i>
+        </button>
+      </form>
+
+      <div class="dialog-success" data-dialog-success hidden>
+        <span><i data-lucide="check"></i></span>
+        <h2>Email request ready.</h2>
+        <p>Open the prepared message to send your pilot details to info@byteflows.com.</p>
+        <div class="dialog-success-actions">
+          <a class="button button-primary" href="mailto:info@byteflows.com" data-pilot-email>
+            Open email
+            <i data-lucide="mail"></i>
+          </a>
+          <button class="button button-secondary" type="button" data-close-pilot>Done</button>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="toast" data-toast role="status" aria-live="polite">Shortlist rebuilt for the new brief.</div>
+  </body>
+</html>

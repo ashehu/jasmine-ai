@@ -1,0 +1,6 @@
+.DS_Store
+.tmp-*/
+*.pptx
+*.inspect.ndjson
+Jasmine_Deck_3sldies/
+Jasmine_Deck_3sldies_montage.png
