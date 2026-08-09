@@ -1917,6 +1917,13 @@ input:focus {
   line-height: 1.75;
 }
 
+.case-story-copy > p a {
+  color: var(--purple);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .case-story-copy > p:first-child {
   color: var(--black);
   font-size: 21px;
