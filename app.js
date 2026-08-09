@@ -98,11 +98,55 @@ function updateCreatorRows() {
 }
 
 function showToast(message) {
+  if (!toast) return;
   toast.textContent = message;
   toast.classList.add("visible");
   window.clearTimeout(showToast.timeout);
   showToast.timeout = window.setTimeout(() => toast.classList.remove("visible"), 2600);
 }
+
+async function copyShareUrl(url) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(url);
+    return;
+  }
+
+  const input = document.createElement("textarea");
+  input.value = url;
+  input.setAttribute("readonly", "");
+  input.style.position = "fixed";
+  input.style.opacity = "0";
+  document.body.appendChild(input);
+  input.select();
+  document.execCommand("copy");
+  input.remove();
+}
+
+const canonicalShareUrl = document.querySelector('link[rel="canonical"]')?.href || window.location.href;
+
+document.querySelectorAll("[data-share-platform]").forEach((control) => {
+  const platform = control.dataset.sharePlatform;
+
+  if (platform === "x") {
+    const title = control.dataset.shareTitle || document.title;
+    control.href = `https://x.com/intent/post?text=${encodeURIComponent(title)}&url=${encodeURIComponent(canonicalShareUrl)}`;
+  }
+
+  if (platform === "linkedin") {
+    control.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(canonicalShareUrl)}`;
+  }
+
+  if (platform === "instagram") {
+    control.addEventListener("click", async () => {
+      try {
+        await copyShareUrl(canonicalShareUrl);
+        showToast("Article link copied. Paste it into Instagram.");
+      } catch {
+        showToast("Unable to copy the link. Please copy it from the address bar.");
+      }
+    });
+  }
+});
 
 briefForm?.addEventListener("submit", (event) => {
   event.preventDefault();

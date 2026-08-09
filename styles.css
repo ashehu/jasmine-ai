@@ -2077,6 +2077,53 @@ input:focus {
   content: "/";
 }
 
+.insight-share {
+  display: flex;
+  gap: 24px;
+  padding: 16px max(32px, calc((100vw - var(--page)) / 2));
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.insight-share > span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.insight-share-links {
+  display: flex;
+  gap: 8px;
+}
+
+.insight-share-link {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  cursor: pointer;
+  place-items: center;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.insight-share-link:hover,
+.insight-share-link:focus-visible {
+  background: var(--paper);
+  border-color: var(--purple-light);
+  transform: translateY(-2px);
+}
+
+.insight-share-link img {
+  width: 17px;
+  height: 17px;
+}
+
 .insight-process {
   display: grid;
   margin-top: 34px;
@@ -2999,6 +3046,11 @@ input:focus {
   }
 
   .insight-byline {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .insight-share {
     padding-right: 20px;
     padding-left: 20px;
   }
