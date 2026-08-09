@@ -2100,15 +2100,15 @@ input:focus {
 }
 
 .insight-share-link {
-  display: grid;
-  width: 38px;
-  height: 38px;
-  padding: 0;
+  display: inline-flex;
+  min-height: 40px;
+  padding: 0 12px;
   background: var(--white);
   border: 1px solid var(--line);
-  border-radius: 50%;
+  border-radius: 6px;
   cursor: pointer;
-  place-items: center;
+  align-items: center;
+  gap: 8px;
   transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
 }
 
@@ -2122,6 +2122,11 @@ input:focus {
 .insight-share-link img {
   width: 17px;
   height: 17px;
+}
+
+.insight-share-link span {
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .insight-process {
@@ -3053,6 +3058,13 @@ input:focus {
   .insight-share {
     padding-right: 20px;
     padding-left: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .insight-share-links {
+    width: 100%;
+    flex-wrap: wrap;
   }
 
   .case-snapshot {
