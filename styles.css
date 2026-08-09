@@ -2055,7 +2055,8 @@ input:focus {
 
 .insights-library-grid {
   display: grid;
-  grid-template-columns: minmax(0, 780px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
 }
 
 .insight-preview-section {
@@ -2154,6 +2155,14 @@ input:focus {
   color: var(--muted);
   font-size: 15px;
   line-height: 1.6;
+}
+
+.higher-ed-story-hero .case-study-hero-content {
+  max-width: 1040px;
+}
+
+.higher-ed-story-hero h1 {
+  max-width: 1040px;
 }
 
 .pilot-section {
@@ -2999,7 +3008,8 @@ input:focus {
   }
 
   .case-preview-grid,
-  .case-library-grid {
+  .case-library-grid,
+  .insights-library-grid {
     grid-template-columns: 1fr;
   }
 
