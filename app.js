@@ -140,7 +140,7 @@ document.querySelectorAll("[data-share-platform]").forEach((control) => {
     control.addEventListener("click", async () => {
       try {
         await copyShareUrl(canonicalShareUrl);
-        showToast("Article link copied. Paste it into Instagram.");
+        showToast("Link copied. Paste it into Instagram.");
       } catch {
         showToast("Unable to copy the link. Please copy it from the address bar.");
       }

@@ -1831,7 +1831,7 @@ input:focus {
   line-height: 1.02;
 }
 
-.case-study-hero-content > p:last-child {
+.case-study-hero-content > p {
   max-width: 760px;
   margin: 0;
   color: rgba(255, 255, 255, 0.8);
@@ -2077,71 +2077,63 @@ input:focus {
   content: "/";
 }
 
-.insight-share {
-  display: flex;
-  gap: 24px;
-  padding: 16px max(32px, calc((100vw - var(--page)) / 2));
-  background: var(--white);
-  border-bottom: 1px solid var(--line);
+.story-share {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  gap: 5px;
+  margin-top: 22px;
+  padding: 5px;
+  color: var(--black);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 6px;
+  box-shadow: 0 12px 30px rgba(13, 11, 27, 0.18);
   align-items: center;
-  justify-content: space-between;
+  backdrop-filter: blur(12px);
 }
 
-.insight-share > span {
-  color: var(--muted);
+.story-share > span {
+  padding: 0 8px;
+  color: #68636f;
   font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
 }
 
-.insight-share-links {
+.story-share-links {
   display: flex;
-  gap: 8px;
+  gap: 2px;
 }
 
-.insight-share-link {
+.story-share-link {
   display: inline-flex;
-  min-height: 40px;
-  padding: 0 12px;
+  min-height: 34px;
+  padding: 0 9px;
   color: var(--black);
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  cursor: pointer;
-  align-items: center;
-  gap: 8px;
-  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
-}
-
-.insight-share-link:hover,
-.insight-share-link:focus-visible {
-  background: var(--paper);
-  border-color: var(--purple-light);
-  transform: translateY(-2px);
-}
-
-.insight-share-link img {
-  width: 17px;
-  height: 17px;
-}
-
-.insight-share-link span {
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.insight-story-hero .insight-share {
-  margin-top: 24px;
-  padding: 0;
   background: transparent;
   border: 0;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+  gap: 7px;
+  transition: background 160ms ease, color 160ms ease;
 }
 
-.insight-story-hero .insight-share > span {
-  color: rgba(255, 255, 255, 0.72);
+.story-share-link:hover,
+.story-share-link:focus-visible {
+  color: var(--purple);
+  background: #f0edf8;
+}
+
+.story-share-link img {
+  width: 15px;
+  height: 15px;
+}
+
+.story-share-link span {
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .insight-process {
@@ -3043,7 +3035,7 @@ input:focus {
   }
 
   .case-library-hero > p:last-child,
-  .case-study-hero-content > p:last-child {
+  .case-study-hero-content > p {
     font-size: 16px;
   }
 
@@ -3070,15 +3062,11 @@ input:focus {
     padding-left: 20px;
   }
 
-  .insight-share {
-    padding-right: 20px;
-    padding-left: 20px;
-    align-items: flex-start;
-    flex-direction: column;
+  .story-share {
+    flex-wrap: wrap;
   }
 
-  .insight-share-links {
-    width: 100%;
+  .story-share-links {
     flex-wrap: wrap;
   }
 
